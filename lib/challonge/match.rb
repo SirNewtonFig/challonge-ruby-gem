@@ -1,7 +1,7 @@
 # the only attributes that will save are: scores_csv, winner_id
 
 class Challonge::Match < Challonge::API
-  self.site = "https://api.challonge.com/api/tournaments/:tournament_id"
+  self.site = "https://api.challonge.com/v1/tournaments/:tournament_id"
 
   def tournament
     Challonge::Tournament.find(self.prefix_options[:tournament_id])

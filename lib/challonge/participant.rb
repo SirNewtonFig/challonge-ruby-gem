@@ -1,8 +1,8 @@
 # the only attributes that will save are: name, seed, challonge_username, email, misc
 
 class Challonge::Participant < Challonge::API
-  self.site = "https://api.challonge.com/api/tournaments/:tournament_id"
-
+  self.site = "https://api.challonge.com/v1/tournaments/:tournament_id"
+  
   def initialize(attributes = {}, persisted = false)
     @attributes     = {}
     @prefix_options = {}

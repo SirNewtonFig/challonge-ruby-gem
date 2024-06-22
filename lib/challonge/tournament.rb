@@ -1,5 +1,5 @@
 class Challonge::Tournament < Challonge::API
-  self.site = "https://api.challonge.com/api"
+  self.site = "https://api.challonge.com/v1/"
 
   def description
     if self.attributes.include?('description_source')
